@@ -1,0 +1,138 @@
+*,::after,::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+}
+body{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.container_calculator
+{
+    max-width: 600px;
+    width: 90%;
+    height: 640px;
+    position: relative;
+}
+.title
+{
+    font-size: 20px;
+    background-color: rgb(1, 1, 15);
+    color: rgb(118, 113, 113);
+    font-family: "poppins";
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.screen_calculator
+{
+    width: 98%;
+    min-height: 100px;
+    height: auto;
+    background-color: rgb(1, 1, 15);
+    margin: 20px auto;
+    padding: 0 20px 18px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 700;
+    color: aliceblue;
+}
+.container_keys
+{
+    width: 98%;
+    height: 460px;
+    background-color: rgb(9, 17, 45);
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.keys
+{
+    width: 23%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Kumbh Sans";
+    cursor: pointer;
+    border: none;
+    border-bottom: 5px solid rgb(194, 188, 214);
+    transition: all 0.2s ease-out;
+}
+.keys:nth-child(22)
+{
+    width: 46%;
+    background-color: red;
+    color: #eee;
+}
+.keys:nth-child(22):hover
+{
+    background-color: red;
+    color: #eee;
+}
+.keys:last-child
+{
+    /* width: 47.5%; */
+    background-color: orangered;
+    color: #eee;
+    border-bottom: 5px solid rgb(56, 16, 3);
+}
+.keys:nth-child(4)
+{
+    background-color: rgb(174, 102, 222);
+    
+    color: #eee;
+}
+
+.keys:nth-child(4):hover
+{
+    background-color: rgb(174, 102, 222);
+}
+.keys:last-child:hover
+{
+    background-color: orangered;
+}
+.keys:hover
+{
+    background-color: rgb(44, 197, 69);
+}
+.keys:active
+{
+    box-shadow: 0 3px;
+    transform: translateY(6px);
+}
+#theme
+{
+    cursor: pointer;
+}
+
+.screen_calculator.active{
+    background-color: #eee;
+    color: black;
+    transition: all .8s ease-out;
+}
+#title.active
+{
+    background-color: #eee;
+    transition: all .8s ease-out;
+    color: black;
+}
+
